@@ -1,0 +1,8 @@
+scrape_configs:
+  - job_name: 'node'
+    scrape_interval: 5s
+    static_configs:
+      - targets: ['172.16.44.16:9100']
+      - targets: ['172.16.44.17:9100']
+      - targets: ['172.16.44.18:9100']
+      - targets: ['172.16.44.20:9100']
