@@ -1,5 +1,6 @@
 FROM jenkins/jenkins:lts-jdk17
 USER root
+
 # Install required tools
 RUN apt-get update && apt-get install -y lsb-release
 RUN apt-get install -y wget apt-transport-https gpg
